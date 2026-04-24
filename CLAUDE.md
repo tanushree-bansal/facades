@@ -15,13 +15,22 @@ There are no tests or linters configured yet.
 
 ## Git Workflow
 
-After every feature or fix: commit with a conventional message and push to `origin/main`.
+**Every completed task must be committed and pushed before moving on.** This is non-negotiable — it ensures work is never lost and the repo on GitHub always reflects the current state of the project.
 
+After every feature, fix, or meaningful change:
+1. `git add` the relevant files
+2. `git commit` with a conventional message
+3. `git push` to `origin/main`
+
+Commit message format:
 ```
 feat: add X
 fix: correct Y
 chore: update Z
+refactor: restructure W
 ```
+
+Never batch multiple unrelated changes into one commit. Each commit should represent one logical unit of work and be descriptive enough to understand without reading the diff.
 
 GitHub repo: https://github.com/tanushree-bansal/facades
 
